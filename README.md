@@ -15,3 +15,8 @@
 2. Array.join(separator)：通过参数分隔符将数组元素连接成一个字符串；
 
 ### 2. [手写bind](./手写bind.js)
+
+分析：
+
+1. 主要还是通过call来实现，通过在Function构造函数的prototype属性上绑定自定义bind函数
+2. 通过this指向被绑定的函数
