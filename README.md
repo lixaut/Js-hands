@@ -1,5 +1,5 @@
 
-<div style="fontSize:20;color:pink">手写函数</div>
+<h1>手写函数</h1>
 
 ### 1. [大数相加](./大数相加.js) 
 
