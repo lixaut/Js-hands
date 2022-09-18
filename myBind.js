@@ -1,6 +1,5 @@
 
 // 手写bind
-
 Function.prototype.myBind = function(ctx, ...args) {
   return (...innerArgs) => this.call(ctx, ...args, ...innerArgs);
 };
