@@ -1,5 +1,6 @@
 
 // 函数柯里化
+
 function curry(fn) {
   const context = this;
   function inner(...args) {

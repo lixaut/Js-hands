@@ -1,5 +1,6 @@
 
 // 大数相加
+
 function bigNumberSum(a, b) {
   let cur = 0;
   while (cur < a.length || cur < b.length) {
