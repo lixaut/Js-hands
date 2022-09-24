@@ -9,6 +9,29 @@ function curry(fn) {
   return inner;
 }
 
+// 解法二
+function curry2(fn) {
+  function inner(...args) {
+    if (args.length >= fn.length) return fn(...args)
+    return (...innerArgs) => inner(...args, ...innerArgs)
+  }
+  return inner;
+}
+
+// 解法三 带有占位符的curry
+function curry3(fn) {
+  function inner(...args) {
+    const complete = args.length >= fn.length && !args.slice(0, fn.length).includes(curry.placeholder);
+    if (complete) return fn.apply(this, args);
+    return (...newArgs) => {
+      const res = args.map(arg => arg === curry.placeholder && newArgs.length ? newArgs.shift() : arg);
+      return inner(...res, ...newArgs);
+    }
+  }
+  return inner;
+}
+curry.placeholder = Symbol()
+
 // test
 function test(a, b, c) {
   console.log(a, b, c);
