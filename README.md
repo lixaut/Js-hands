@@ -148,4 +148,13 @@
 
 ### 21. [双链表](./DoublyLinkedList.js)
 
-### 22. []()
+### 22. [call&apply&bind](./call&apply&bind.js)
+
+### 23. [手写new](./new.js)
+
+知识点：
+
+1. `Object.setPrototypeOf(obj, constructor.prototype)` 给对象obj设置新的prototype属性。
+2. `[].shift.apply(arguments)` 通过apply方法，使得数组方法shift也可以用在伪数组身上。
+
+### 24. 
