@@ -157,4 +157,10 @@
 1. `Object.setPrototypeOf(obj, constructor.prototype)` 给对象obj设置新的prototype属性。
 2. `[].shift.apply(arguments)` 通过apply方法，使得数组方法shift也可以用在伪数组身上。
 
-### 24. 
+### 24. [发布订阅模式](./EventEmitter.js)
+
+### 25. [数组扁平化](./flatten.js)
+
+### 26. [寄生组合继承](./extend2.js)
+
+### 27. 
