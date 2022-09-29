@@ -170,3 +170,5 @@
 ### 29. [冒泡排序](./bubbleSort.js)
 
 ### 30. [选择排序](./selectSort.js)
+
+### 31. [插入排序](./insertSort.js)
