@@ -163,4 +163,6 @@
 
 ### 26. [寄生组合继承](./extend2.js)
 
-### 27. 
+### 27. [并行限制的Promise调度器](./scheduler.js)
+
+### 28. [手写instanceof](./myInstanceof.js)
