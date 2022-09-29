@@ -166,3 +166,7 @@
 ### 27. [并行限制的Promise调度器](./scheduler.js)
 
 ### 28. [手写instanceof](./myInstanceof.js)
+
+### 29. [冒泡排序](./bubbleSort.js)
+
+### 30. [选择排序](./selectSort.js)
