@@ -1,33 +1,16 @@
 
-// 实现快排
-function helper(list) {
-  if (list.length <= 1) return list;
-
-  const bigger = [];
-  const smaller = [];
-
-  const pivotIndex = Math.floor(Math.random() * list.length);
-  const pivot = list[pivotIndex];
-
-  for (let i = 0; i < list.length; i++) {
-    const number = list[i];
-    if (i === pivotIndex) continue;
-    if (number <= pivot) {
-      smaller.push(number);
-    } else {
-      bigger.push(number);
+// 快速排序
+function quickSort(arr) {
+    let len = arr.length;
+    if (len < 2) {
+        return arr;
     }
-  }
-
-  return helper(smaller)
-    .concat([pivot])
-    .concat(helper(bigger));
-}
-
-function quickSort(list) {
-  return helper(list)
+    let cur = arr[len - 1];
+    let left = arr.filter((v, i) => v <= cur && i !== len - 1);
+    let right = arr.filter(v => v > cur);
+    return [...quickSort(left), cur, ...quickSort(right)];
 }
 
 // test
-const l = quickSort([1, 3, 2, 9, 6, 5, 1, 0, -2, 10]);
-console.log(l);
+const arr = [1, 9, 4, 2, 5, 7, 3, 8, 6, 0];
+console.log(quickSort(arr));

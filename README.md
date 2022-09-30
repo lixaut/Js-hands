@@ -172,3 +172,9 @@
 ### 30. [选择排序](./selectSort.js)
 
 ### 31. [插入排序](./insertSort.js)
+
+### 32. [快速排序](./quickSort.js)
+
+### 33. [归并排序](./mergeSort.js)
+
+### 34. 
