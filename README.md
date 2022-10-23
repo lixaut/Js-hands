@@ -190,3 +190,7 @@
 ### 37. [动态求解最小硬币数](./coinChange.js)
 
 ### 38, [手写AJAX](./ajax.js)
+
+### 39, [实现 Promise & then & all](./MyPromise.js)
+
+实现了 Promise 的实例方法 then 和本身的静态方法 all，定时器和链式调用还未完成，需要进一步完善。
